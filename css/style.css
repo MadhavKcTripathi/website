@@ -144,7 +144,7 @@ header .ham-burger.active span:nth-child(2){
 /*Home section*/
 .home{
 	height: 100vh;
-	background-image: url('https://raw.githubusercontent.com/MadhavKcTripathi/IIT_Roorkee/refs/heads/main/InShot_20241217_183709663.gif');
+	background-image: url('https://github.com/MadhavKcTripathi/IIT_Roorkee/blob/main/InShot_20241217_183709663.gif?raw=true');
 	background-size: cover;
 	padding:15px;
 	-webkit-display: flex;
