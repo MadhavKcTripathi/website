@@ -356,7 +356,19 @@ header .ham-burger.active span:nth-child(2){
 	max-width: 50%;
 	padding: 2px;	
 }
-
+.box {
+ position: relative;
+ width: 100%;
+ max-width: 560px;
+ margin: 0 auto;
+  }
+  
+  .box iframe {
+ aspect-ratio: 16 / 9;
+ width: 100%;
+ height: auto;
+ border: none;
+  }
 
 .gallery .content .box img {
     display: block;
