@@ -401,7 +401,7 @@ header .ham-burger.active span:nth-child(2){
 /*Price Section*/
 
 .price-package{
-	padding: 30px 0px;
+	padding: 0px 0px;
 	background-color: #ffffff;
 }
 .price-package h2{
@@ -410,6 +410,7 @@ header .ham-burger.active span:nth-child(2){
 	color:#000000;
 	padding: 0px 0px 8px;
 	text-align: center;
+	margin-top: 75px;
 }
 .price-package .title-p{
  font-size: 15px;
@@ -514,6 +515,21 @@ header .ham-burger.active span:nth-child(2){
 .price-package .content .box .inner .img img{
 	width: 100%;
 }
+
+
+/*Workout Plan*/
+
+#portal-container h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 8px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+/*Workout Plan*
+
 
 
 
