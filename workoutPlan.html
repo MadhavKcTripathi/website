@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Portal</title>
+
+    <!-- Include existing styles from the second HTML -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /* Additional style to align the portal content with the existing layout */
+        #portal-container {
+            text-align: center;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section (Reusing the layout and style from the second HTML) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Fitness <span>Club</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Document Portal Section -->
+    <div id="portal-container">
+        <h2>My Workout Plan</h2>
+        <p>Enter your unique ID to access your Workout:</p>
+        <input type="text" id="userId" placeholder="Enter your ID">
+        <button onclick="loadDoc()">Access Workout</button>
+        <iframe id="docFrame" src=""></iframe>
+    </div>
+
+    <!-- Include existing scripts from the second HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Example interactions
+            $(".ham-burger, .nav ul li a").click(function () {
+                $(".nav").toggleClass("open");
+                $(".ham-burger").toggleClass("active");
+            });
+        });
+
+        // WOW.js animation initialization
+        wow = new WOW({
+            animateClass: "animated",
+            offset: 0,
+        });
+        wow.init();
+
+        // Document portal functionality
+        function loadDoc() {
+            const userId = document.getElementById("userId").value.trim();
+            const links = {
+                "ATIITRFTFauth660": "https://docs.google.com/document/d/1UzM0hGjPHcBFmJWzwSlNnBuRCOxTMAhOYgtBu7EjI9s/preview?tab=t.smrbsofoznqq",
+                "user2": "https://docs.google.com/document/d/your-doc-id-2/preview",
+                "user3": "https://docs.google.com/document/d/your-doc-id-3/preview"
+            };
+
+            if (links[userId]) {
+                document.getElementById("docFrame").src = links[userId];
+            } else {
+                alert("Invalid ID. Please try again.");
+            }
+        }
+    </script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
